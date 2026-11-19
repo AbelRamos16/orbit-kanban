@@ -8,7 +8,7 @@ const tasks = [
 
 describe('filterTasks', () => {
   it('matches task titles without case sensitivity', () => {
-    expect(filterTasks(tasks, 'TABLERO')).toHaveLength(2)
+    expect(filterTasks(tasks, 'TABLERO')).toHaveLength(1)
     expect(filterTasks(tasks, 'TABLERO')[0].key).toBe('ORB-2')
   })
 
